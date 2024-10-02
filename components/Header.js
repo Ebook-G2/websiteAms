@@ -27,7 +27,7 @@ function Header() {
       src: "/assets/svg/news-m.svg",
       alt: "News",
       name: "News",
-      url: "/",
+      url: "/news",
     },
     {
       src: "/assets/svg/about-m.svg",
@@ -43,7 +43,7 @@ function Header() {
     },
   ];
   return (
-    <header className="flex max-sm:flex-col md:flex-col lg:px-2 lg:h-[70px] md:h-[50px] max-sm:h-[80px] h-fit z-50 shadow sticky top-0 bg-white">
+    <header className="flex max-sm:flex-col md:flex-col lg:px-2 lg:h-[70px] md:h-[70px] max-sm:h-[80px] h-fit z-50 shadow sticky top-0 bg-white">
       <div className="flex justify-between pt-[1rem] pb-5 lg:px-2 w-full ">
         <div className="w-1/6 max-sm:w-full flex items-center -my-7">
           <Link href="/" className="ml-8">
@@ -59,7 +59,7 @@ function Header() {
           <section className="flex gap-3 lg:gap-6">
             {menu.map((menu, index) => (
               <Link href={menu.url} key={index}>
-                <p className="py-1 border-b-2 border-transparent hover:border-[#144189] uppercase">
+                <p className="py-1 border-b-2 border-transparent hover:border-[#144189] uppercase 2xl:text-xl xl:text-xl lg:text-xl md:text-base font-semibold">
                   {menu.name}
                 </p>
               </Link>
