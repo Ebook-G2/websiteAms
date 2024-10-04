@@ -45,7 +45,7 @@ function Founder() {
     <div className="w-full flex flex-col items-center justify-center">
       <div className="w-10/12 py-20 pb-20">
         <div className="flex flex-col relative items-center justify-center text-center pb-9">
-          <span className="font-black text-sm lg:text-4xl leading-[-130%]">
+          <span className="font-black md:text-2xl text-sm lg:text-4xl leading-[-130%]">
             Founders & Leaders
           </span>
           <div className="h-[4px] w-[81px] md:w-36 lg:w-72 xl:w-80 mt-3 m-auto md:m-4 md:mt-1 rounded-[20px] bg-[#144189] max-sm:mb-2 max-sm:w-[4rem] 2xl:w-80 sm:text-sm sm:font-normal md:h-[3px] sm:w-32"></div>
