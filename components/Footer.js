@@ -36,9 +36,6 @@ function Footer() {
                   <Link href="/" className="capitalize">
                     Product
                   </Link>
-                  {/* <Link href="/" className="capitalize">
-                                        New
-                                    </Link> */}
                 </div>
               </div>
               <div className="lg:w-2/4">
@@ -150,5 +147,4 @@ function Footer() {
     </section>
   );
 }
-
 export default Footer;
