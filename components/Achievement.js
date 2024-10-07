@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
-import { delay, motion, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 function Achievement() {
   const achievement = [
     {
