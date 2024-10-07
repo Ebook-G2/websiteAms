@@ -1,9 +1,25 @@
 import React from "react";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 function Header() {
   const [childrenDrawer, setChildrenDrawer] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const handleResize = () => {
+    if (window.innerWidth > 768) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const showDrawer = () => {
     setOpen(true);
   };
@@ -43,7 +59,7 @@ function Header() {
     },
   ];
   return (
-    <header className="flex max-sm:flex-col md:flex-col lg:px-2 lg:h-[70px] md:h-[70px] max-sm:h-[80px] h-fit z-50 shadow sticky top-0 bg-white">
+    <header className="flex max-sm:flex-col md:flex-col lg:px-2 lg:h-[70px] md:h-[70px] max-sm:h-[80px] h-fit z-50 shadow sticky top-0 bg-white font-roboto">
       <div className="flex justify-between pt-[1rem] pb-5 lg:px-2 w-full ">
         <div className="w-1/6 max-sm:w-full flex items-center -my-7">
           <Link href="/" className="ml-8">
@@ -59,7 +75,7 @@ function Header() {
           <section className="flex gap-3 lg:gap-6">
             {menu.map((menu, index) => (
               <Link href={menu.url} key={index}>
-                <p className="py-1 border-b-2 border-transparent hover:border-[#144189] uppercase 2xl:text-xl xl:text-xl lg:text-xl md:text-base font-semibold">
+                <p className="py-1 border-b-2 border-transparent hover:border-[#144189] uppercase 2xl:text-xl xl:text-xl lg:text-xl md:text-base font-semibold transition-all duration-300 ease-in-out hover:border-b-4">
                   {menu.name}
                 </p>
               </Link>
@@ -74,7 +90,7 @@ function Header() {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-end">
           <div className="bg-white w-4/5 max-w-md h-full p-4">
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-lg font-bold">Menu</h2>
+              <h2 className="text-xl font-bold">Menu</h2>
               <div className="w-6 h--6">
                 <img src="/assets/svg/close.svg" alt="icon" onClick={onClose} />
               </div>

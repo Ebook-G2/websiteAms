@@ -6,7 +6,7 @@ import HeroOd from "../components/HeroOd";
 
 function news() {
   return (
-    <div>
+    <div className="font-roboto">
       <Header />
       <HeroOd title={"Home"} content={"News"} />
 

@@ -44,7 +44,7 @@ function SliderServices() {
           transition={variants.transition}
           className="flex flex-col relative items-center justify-center text-center"
         >
-          <span className="font-black text-sm lg:text-4xl leading-[-130%]">
+          <span className="font-black md:text-2xl text-sm lg:text-4xl leading-[-130%]">
             Our Services
           </span>
           <div className="h-[3px] w-[81px] md:w-[200px] lg:w-[20px] xl:w-[200px] mt-3 m-auto md:m-4 md:mt-1 rounded-[20px] bg-[#144189]"></div>
@@ -69,7 +69,7 @@ function SliderServices() {
                 </div>
                 <div className="pt-3 w-full">
                   <div className="flex gap-2 w-full">
-                    <h1 className="font-medium text-center max-sm:font-normal max-sm:text-[11px] max-sm:leading-tight cursor-pointer 2xl:text-lg ">
+                    <h1 className="font-medium text-center max-sm:font-normal max-sm:text-[11px] max-sm:leading-tight cursor-pointer 2xl:text-lg lg:text-xl md:text-lg max-md:text-base">
                       {service.name}
                     </h1>
                   </div>
