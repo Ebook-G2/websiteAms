@@ -69,7 +69,7 @@ function SliderServices() {
                 </div>
                 <div className="pt-3 w-full">
                   <div className="flex gap-2 w-full">
-                    <h1 className="font-medium text-center max-sm:font-normal max-sm:text-[11px] max-sm:leading-tight cursor-pointer 2xl:text-lg ">
+                    <h1 className="font-medium text-center max-sm:font-normal max-sm:text-[11px] max-sm:leading-tight cursor-pointer 2xl:text-lg lg:text-xl md:text-lg max-md:text-base">
                       {service.name}
                     </h1>
                   </div>

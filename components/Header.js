@@ -75,7 +75,7 @@ function Header() {
           <section className="flex gap-3 lg:gap-6">
             {menu.map((menu, index) => (
               <Link href={menu.url} key={index}>
-                <p className="py-1 border-b-2 border-transparent hover:border-[#144189] uppercase 2xl:text-xl xl:text-xl lg:text-xl md:text-base font-semibold">
+                <p className="py-1 border-b-2 border-transparent hover:border-[#144189] uppercase 2xl:text-xl xl:text-xl lg:text-xl md:text-base font-semibold transition-all duration-300 ease-in-out hover:border-b-4">
                   {menu.name}
                 </p>
               </Link>
