@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 const imageSlider = [
   { src: "/assets/img/2.jpg", alt: "image" },
@@ -12,11 +13,6 @@ const imageSlider = [
 ];
 const variants = {
   hidden: { opacity: 0, y: -100 },
-  visible: { opacity: 1, y: 0 },
-  transition: { duration: 2 },
-};
-const variants1 = {
-  hidden: { opacity: 0, y: 100 },
   visible: { opacity: 1, y: 0 },
   transition: { duration: 2 },
 };
@@ -66,12 +62,12 @@ export default function Hero() {
             enhancing brand value.
           </motion.span>
           <div class="text-box">
-            <a
+            <Link
               href="/"
               class="btn btn-white btn-animate 2xl:text-2xl lg:text-xl md:text-lg max-sm:text-base"
             >
               Contact us
-            </a>
+            </Link>
           </div>
         </div>
         <div className="relative item h-[45rem] max-sm:h-[15rem] max-md:h-[22rem] overflow-hidden">

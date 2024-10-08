@@ -1,16 +1,10 @@
 import React from "react";
-var $ = require("jquery");
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 const variants = {
   hidden: { opacity: 0, y: -100 },
-  visible: { opacity: 1, y: 0 },
-  transition: { duration: 2 },
-};
-const variants1 = {
-  hidden: { opacity: 0, y: 100 },
   visible: { opacity: 1, y: 0 },
   transition: { duration: 2 },
 };
