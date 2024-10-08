@@ -121,7 +121,7 @@ function AboutUs() {
                   AI-generated Images and Graphics
                 </span>
                 helps create unique images and graphics, increasing the appeal
-                of videos. In addition, AMS's
+                of videos. In addition, AMS&rsquo;s
                 <span className="font-semibold">
                   AI-powered Social Media Management
                 </span>
