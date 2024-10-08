@@ -1,25 +1,22 @@
 import React from "react";
-var $ = require("jquery");
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
-if (typeof window !== "undefined") {
-  window.$ = window.jQuery = require("jquery");
-}
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import dynamic from "next/dynamic";
-import "../styles/hover.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
-  ssr: false,
-});
 const imageSlider = [
   { src: "/assets/img/2.jpg", alt: "image" },
   { src: "/assets/img/9.jpg", alt: "image" },
 ];
 const variants = {
   hidden: { opacity: 0, y: -100 },
+  visible: { opacity: 1, y: 0 },
+  transition: { duration: 2 },
+};
+const variants1 = {
+  hidden: { opacity: 0, y: 100 },
   visible: { opacity: 1, y: 0 },
   transition: { duration: 2 },
 };
@@ -78,20 +75,22 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative item h-[45rem] max-sm:h-[15rem] max-md:h-[22rem] overflow-hidden">
-          <OwlCarousel
-            items={1}
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={1}
             loop={true}
-            autoplay={true}
-            autoplayTimeout={7000}
-            autoplayHoverPause={true}
-            responsive={{
-              1: { items: 1 },
-              900: { items: 1 },
-              1025: { items: 1 },
+            breakpoints={{
+              480: { slidesPerView: 1 },
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 1 },
+              1024: { slidesPerView: 1 },
+              1280: { slidesPerView: 1 },
+              1440: { slidesPerView: 1 },
+              1600: { slidesPerView: 1 },
             }}
           >
             {imageSlider.map((imageSlider, index) => (
-              <div className="item" key={index}>
+              <SwiperSlide className="item" key={index}>
                 <Image
                   src={imageSlider.src}
                   alt="Ocean"
@@ -99,9 +98,9 @@ export default function Hero() {
                   width={1280}
                   height={700}
                 />
-              </div>
+              </SwiperSlide>
             ))}
-          </OwlCarousel>
+          </Swiper>
         </div>
       </div>
     </div>
