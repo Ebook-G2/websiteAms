@@ -5,10 +5,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 function Founder() {
-  // const refs = useRef([]);
-  // const scrollToCard = (index) => {
-  //   refs.current[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
-  // };
   const person = [
     {
       src: "/assets/img/founder.jpg",

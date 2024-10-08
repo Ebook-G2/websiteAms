@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 function Header() {
-  const [childrenDrawer, setChildrenDrawer] = useState(false);
   const [open, setOpen] = useState(false);
 
   const handleResize = () => {
