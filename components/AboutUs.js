@@ -90,7 +90,7 @@ function AboutUs() {
   ];
   return (
     <div className="flex flex-col custom-shadow">
-      <div className="flex flex-col relative w-full bg-[url('/assets/img/about1.jpg')] bg-cover bg-center items-center justify-center text-white text pb-20">
+      <div className="flex flex-col relative w-full bg-cover bg-center items-center justify-center text-white text pb-20">
         <div className="absolute inset-0 bg-[#491caa] opacity-70"></div>
         <div className="relative z-10 mb-4 w-10/12 pt-7">
           <h1 className="w-10/12 font-bold text-4xl text-center mx-auto max-sm:text-xl max-lg:text-2xl">

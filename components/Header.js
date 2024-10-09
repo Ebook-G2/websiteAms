@@ -39,12 +39,6 @@ function Header() {
       url: "/",
     },
     {
-      src: "/assets/svg/news-m.svg",
-      alt: "News",
-      name: "News",
-      url: "/news",
-    },
-    {
       src: "/assets/svg/about-m.svg",
       alt: "About us",
       name: "About Us",

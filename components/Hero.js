@@ -1,16 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Link from "next/link";
 
-const imageSlider = [
-  { src: "/assets/img/2.jpg", alt: "image" },
-  { src: "/assets/img/9.jpg", alt: "image" },
-];
 const variants = {
   hidden: { opacity: 0, y: -100 },
   visible: { opacity: 1, y: 0 },
@@ -71,32 +66,15 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative item h-[45rem] max-sm:h-[15rem] max-md:h-[22rem] overflow-hidden">
-          <Swiper
-            spaceBetween={20}
-            slidesPerView={1}
-            loop={true}
-            breakpoints={{
-              480: { slidesPerView: 1 },
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 1 },
-              1024: { slidesPerView: 1 },
-              1280: { slidesPerView: 1 },
-              1440: { slidesPerView: 1 },
-              1600: { slidesPerView: 1 },
-            }}
-          >
-            {imageSlider.map((imageSlider, index) => (
-              <SwiperSlide className="item" key={index}>
-                <Image
-                  src={imageSlider.src}
-                  alt="Ocean"
-                  className="w-full h-auto object-cover max-h-[45rem] max-sm:h-[15rem] max-md:h-[22rem] md:h-[32rem]"
-                  width={1280}
-                  height={700}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <div className="item">
+            <Image
+              src="/assets/img/9.jpg"
+              alt="Hero img"
+              className="w-full h-auto brightness-75 object-cover max-h-[45rem] max-sm:h-[15rem] max-md:h-[22rem] md:h-[32rem]"
+              width={1280}
+              height={700}
+            />
+          </div>
         </div>
       </div>
     </div>

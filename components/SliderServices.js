@@ -34,6 +34,7 @@ function SliderServices() {
     visible: { opacity: 1, y: 0 },
     transition: { duration: 1.8, delay: 1 },
   };
+
   return (
     <div className="flex flex-col gap-10">
       <div className="w-10/12 max-sm:my-6 my-10 mx-auto flex flex-col gap-10">

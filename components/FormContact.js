@@ -283,7 +283,7 @@ export default function FormContact() {
               />
             </svg>
             <a href="javascript:void(0)" class="text-sm ml-4">
-              <strong>AMS.JSC@mediasolution.ai</strong>
+              <strong>admin@mediasolution.ai</strong>
             </a>
           </motion.li>
           <motion.li
