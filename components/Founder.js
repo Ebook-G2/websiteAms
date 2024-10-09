@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -50,14 +51,15 @@ function Founder() {
           spaceBetween={20}
           slidesPerView={1}
           loop={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
           breakpoints={{
             480: { slidesPerView: 1, spaceBetween: 20 },
-            640: { slidesPerView: 1, spaceBetween: 30 },
             768: { slidesPerView: 2, spaceBetween: 20 },
-            1024: { slidesPerView: 2, spaceBetween: 30 },
             1280: { slidesPerView: 3, spaceBetween: 30 },
-            1440: { slidesPerView: 3, spaceBetween: 40 },
-            1600: { slidesPerView: 3, spaceBetween: 50 },
           }}
         >
           {person.map((person, index) => (

@@ -59,7 +59,7 @@ function Footer() {
                         height={16}
                       />{" "}
                       <Link href="mailto:AMS.JSC@mediasolution.ai">
-                        AMS.JSC@mediasolution.ai
+                        admin@mediasolution.ai
                       </Link>
                     </li>
                     <li className="flex flex-start gap-2">
@@ -147,4 +147,5 @@ function Footer() {
     </section>
   );
 }
+
 export default Footer;
