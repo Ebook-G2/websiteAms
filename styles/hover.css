@@ -2,7 +2,7 @@
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px; 
+    padding: 12px 30px; 
     display: inline-block;
     border-radius: 20px;
     transition: all 0.2s;
@@ -10,9 +10,8 @@
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+
 }
-
-
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -27,6 +26,7 @@
 .btn-white {
     background-color: #fff;
     color: black;
+
 }
 
 

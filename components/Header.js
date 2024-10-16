@@ -60,7 +60,7 @@ function Header() {
               src="/assets/img/logo_r.png"
               width={100}
               alt="AMS Logo"
-              className="block h-auto max-h-[100px] max-w-full "
+              className="block h-auto max-h-[100px] max-w-full"
             />
           </Link>
         </div>
