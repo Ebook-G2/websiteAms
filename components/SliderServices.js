@@ -48,7 +48,6 @@ function SliderServices() {
           <span className="font-black md:text-2xl text-sm lg:text-4xl leading-[-130%]">
             Our Services
           </span>
-          <div className="h-[3px] w-[81px] md:w-[200px] lg:w-[20px] xl:w-[200px] mt-3 m-auto md:m-4 md:mt-1 rounded-[20px] bg-[#144189]"></div>
         </motion.div>
         <div className="flex justify-center">
           <section className="grid lg:grid-cols-4 grid-cols-3 max-sm:grid-cols-2 max-sm:gap-5 gap-6 lg:gap-10 w-10/12">

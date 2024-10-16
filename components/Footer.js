@@ -96,7 +96,7 @@ function Footer() {
                         <span className="absolute inset-0 rounded-full bg-yellow-400 scale-[0.9] group-hover:scale-110 group-hover:shadow-[0_0_30px_#ffee10] transition-transform duration-500 z-[-1]"></span>
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a
                         href="https://mediasolution.ai/"
                         className="relative flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full transition-all duration-500 group"
@@ -115,7 +115,7 @@ function Footer() {
                         </svg>
                         <span className="absolute inset-0 rounded-full bg-yellow-400 scale-[0.9] group-hover:scale-110 group-hover:shadow-[0_0_30px_#ffee10] transition-transform duration-500 z-[-1]"></span>
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a
                         href="https://www.linkedin.com/company/ai-media-solution-jsc/"
