@@ -49,7 +49,7 @@ export default function Hero() {
             animate="visible"
             variants={variants2}
             transition={variants2.transition}
-            className="lg:text-base text-sm mb-10 text-white font-medium max-sm:text-xs break-words max-sm:mb-4 2xl:max-w-[50%] 2xl:text-lg custom-shadow"
+            className="lg:text-base text-sm mb-10 text-white font-medium max-sm:text-xs break-words max-sm:mb-4 2xl:max-w-[50%] 2xl:text-xl custom-shadow"
           >
             We pride ourselves on being a trusted partner, helping businesses
             build and execute comprehensive communication strategies, from
@@ -58,8 +58,8 @@ export default function Hero() {
           </motion.span>
           <div class="text-box">
             <Link
-              href="/"
-              class="btn btn-white btn-animate 2xl:text-2xl lg:text-xl md:text-lg max-sm:text-base"
+              href="/contact"
+              class="btn btn-white btn-animate 2xl:text-2xl lg:text-xl md:text-lg max-sm:text-base "
             >
               Contact us
             </Link>

@@ -159,7 +159,7 @@ export default function FormContact() {
           animate={isInView2 ? "visible" : "hidden"}
           variants={variants2}
           transition={variants2.transition}
-          class="text-sm text-gray-500 mt-4 leading-relaxed"
+          class="text-base text-gray-500 mt-4 leading-relaxed"
         >
           Do you have specific questions or are you looking for new
           collaboration opportunities? Let our experienced team accompany you

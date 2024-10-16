@@ -5,12 +5,30 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../styles/hover.css";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 function Product() {
+  const ref = useRef(null);
+  const ref1 = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const isInView1 = useInView(ref, { once: true });
+
+  const variants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 },
+    transition: { duration: 1.5 },
+  };
+  const variants1 = {
+    hidden: { opacity: 0, y: 200 },
+    visible: { opacity: 1, y: 0 },
+    transition: { duration: 1.5 },
+  };
   const products = [
     {
       src: "/assets/img/a1.jpg",
       alt: "1",
-      name: "Animal chanel",
+      name: "Birt music",
       topic:
         "Thu Trang is one of the most well-known comedians in showbiz. Thanks to her hard work and efforts along with diverse performances, the actress has been invited to participate in many reality shows, game shows and movies. She is loved by fans, who nicknamed her",
       sub: "1234",
@@ -49,8 +67,8 @@ function Product() {
     },
     {
       src: "/assets/img/a5.jpg",
-      alt: "3",
-      name: "Animal chanel1",
+      alt: "Animal chanel1",
+      name: "Animal chanel1111",
       topic:
         "Thu Trang is one of the most well-known comedians in showbiz. Thanks to her hard work and efforts along with diverse performances, the actress has been invited to participate in many reality shows, game shows and movies. She is loved by fans, who nicknamed her",
       sub: "1234",
@@ -61,11 +79,25 @@ function Product() {
   return (
     <div className="item w-full flex flex-col relative items-center justify-center pt-12 pb-2 font-roboto">
       <div className="flex flex-col relative items-center justify-center text-center ">
-        <span className="font-black text-sm lg:text-4xl leading-[-130%] md:text-2xl pb-10">
+        <motion.span
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={variants}
+          transition={variants.transition}
+          className="font-black text-sm lg:text-4xl leading-[-130%] md:text-2xl pb-10"
+        >
           Featured channels in our network
-        </span>
+        </motion.span>
       </div>
-      <div className="w-9/12 pt-4">
+      <motion.div
+        ref={ref1}
+        initial="hidden"
+        animate={isInView1 ? "visible" : "hidden"}
+        variants={variants1}
+        transition={variants1.transition}
+        className="w-9/12 pt-4"
+      >
         <Swiper
           spaceBetween={5}
           slidesPerView={1}
@@ -116,6 +148,7 @@ function Product() {
                 <a
                   href={product.link}
                   className="w-full h-full flex flex-col items-center justify-center group"
+                  title={product.name}
                 >
                   <div className="relative md:mb-0">
                     <div className="w-52 h-52 rounded-full overflow-hidden max-sm:w-52 max-sm:h-52">
@@ -149,7 +182,7 @@ function Product() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </motion.div>
     </div>
   );
 }
