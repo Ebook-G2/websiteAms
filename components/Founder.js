@@ -45,7 +45,6 @@ function Founder() {
           <span className="font-black md:text-2xl text-sm lg:text-4xl leading-[-130%]">
             Founders & Leaders
           </span>
-          <div className="h-[4px] w-[81px] md:w-36 lg:w-72 xl:w-80 mt-3 m-auto md:m-4 md:mt-1 rounded-[20px] bg-[#144189] max-sm:mb-2 max-sm:w-[4rem] 2xl:w-80 sm:text-sm sm:font-normal md:h-[3px] sm:w-32"></div>
         </div>
         <Swiper
           spaceBetween={20}
