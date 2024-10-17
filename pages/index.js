@@ -10,6 +10,7 @@ import AboutUs from "../components/AboutUs";
 import Trademark from "../components/Trademark";
 import Achievement from "../components/Achievement";
 import Product from "../components/Product";
+// import SliderCollab from "../components/SliderCollab";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <Hero />
       <Trademark />
       <AboutUs />
+      {/* <SliderCollab /> */}
       <Product />
       <Achievement />
       <SliderServices />
