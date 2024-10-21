@@ -29,55 +29,39 @@ function Product() {
       src: "/assets/img/a1.jpg",
       alt: "1",
       name: "Birt music",
-      topic:
-        "Thu Trang is one of the most well-known comedians in showbiz. Thanks to her hard work and efforts along with diverse performances, the actress has been invited to participate in many reality shows, game shows and movies. She is loved by fans, who nicknamed her",
-      sub: "1234",
-      views: "123",
       link: "https://www.youtube.com/",
     },
     {
       src: "/assets/img/a2.jpg",
       alt: "2",
       name: "Animal chanel",
-      topic:
-        "Thu Trang is one of the most well-known comedians in showbiz. Thanks to her hard work and efforts along with diverse performances, the actress has been invited to participate in many reality shows, game shows and movies. She is loved by fans, who nicknamed her",
-      sub: "1234",
-      views: "123",
+
       link: "https://www.youtube.com/",
     },
     {
       src: "/assets/img/a3.jpg",
       alt: "3",
       name: "Animal chanel",
-      topic:
-        "Thu Trang is one of the most well-known comedians in showbiz. Thanks to her hard work and efforts along with diverse performances, the actress has been invited to participate in many reality shows, game shows and movies. She is loved by fans, who nicknamed her",
-      sub: "1234",
-      views: "123",
+
       link: "https://www.youtube.com/",
     },
     {
       src: "/assets/img/a4.jpg",
       alt: "3",
       name: "Animal chanel",
-      topic:
-        "Thu Trang is one of the most well-known comedians in showbiz. Thanks to her hard work and efforts along with diverse performances, the actress has been invited to participate in many reality shows, game shows and movies. She is loved by fans, who nicknamed her",
-      sub: "1234",
-      views: "123",
+
       link: "https://www.youtube.com/",
     },
     {
       src: "/assets/img/a5.jpg",
       alt: "Animal chanel1",
       name: "Animal chanel1111",
-      topic:
-        "Thu Trang is one of the most well-known comedians in showbiz. Thanks to her hard work and efforts along with diverse performances, the actress has been invited to participate in many reality shows, game shows and movies. She is loved by fans, who nicknamed her",
-      sub: "1234",
-      views: "123",
+
       link: "https://www.youtube.com/",
     },
   ];
   return (
-    <div className="item w-full flex flex-col relative items-center justify-center pt-12 pb-2 font-roboto">
+    <div className="item w-full flex flex-col relative items-center justify-center pt-12 pb-2 ">
       <div className="flex flex-col relative items-center justify-center text-center ">
         <motion.span
           ref={ref}

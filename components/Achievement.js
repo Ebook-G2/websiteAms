@@ -5,25 +5,25 @@ function Achievement() {
   const achievement = [
     {
       src: "/assets/svg/view.svg",
-      alt: "1",
+      alt: "Channels are being developed under our management",
       content: "Channels are being developed under our management",
       data: "123",
     },
     {
       src: "/assets/svg/channel.svg",
-      alt: "2",
+      alt: "Total views of channels we manage",
       content: "Total views of channels we manage",
       data: "6868686868",
     },
     {
       src: "/assets/svg/ai.svg",
-      alt: "3",
+      alt: "AI tool support during work",
       content: "AI tool support during work",
       data: "123",
     },
     {
       src: "/assets/svg/cart.svg",
-      alt: "4",
+      alt: "Total finished goods and customer transactions",
       content: "Total finished goods and customer transactions",
       data: "6868",
     },

@@ -29,35 +29,35 @@ function AboutUs() {
   const about = [
     {
       src: "/assets/svg/automation.svg",
-      alt: "1",
+      alt: "Automated Content Creation",
       title: "Automated Content Creation",
       content:
         "Use AI to automate the video content creation process, from ideation, scripting to editing and finishing.",
     },
     {
       src: "/assets/svg/automatic.svg",
-      alt: "2",
+      alt: "AI-generated Images and Graphics",
       title: "AI-generated Images and Graphics",
       content:
         "Create images and graphics automatically, making videos and media products more eye-catching and professional.",
     },
     {
       src: "/assets/svg/social-media.svg",
-      alt: "3",
+      alt: "AI-powered Social Media Management",
       title: "AI-powered Social Media Management",
       content:
         "Manage and automatically post videos to social media platforms, optimize posting time and engage with audiences.",
     },
     {
       src: "/assets/svg/seo-optimization.svg",
-      alt: "4",
+      alt: "SEO Optimization",
       title: "SEO Optimization",
       content:
         "Use AI to optimize keywords, titles and descriptions to increase video visibility on YouTube and search platforms.",
     },
     {
       src: "/assets/svg/data-analytics.svg",
-      alt: "5",
+      alt: "Data Analytics",
       title: "Data Analytics",
       content:
         "Analyze video performance data and user behavior to adjust and optimize communication strategies.",
@@ -66,57 +66,57 @@ function AboutUs() {
   const work = [
     {
       src: "/assets/svg/handshake.svg",
-      alt: "1",
+      alt: "Requests From Customers",
       title: "Requests From Customers",
       content:
         "Gather information about client goals and requirements. Analyze target audience and content purpose.",
     },
     {
       src: "/assets/svg/brainstorming.svg",
-      alt: "2",
+      alt: "Research and Ideate",
       title: "Research and Ideate",
       content:
         "Research the market, competitors and trends. Propose preliminary ideas for titles, topics and content structure.",
     },
     {
       src: "/assets/svg/discussion.svg",
-      alt: "3",
+      alt: "Conceptualize and Refine",
       title: "Conceptualize and Refine",
       content:
         "Present and discuss ideas with client, get feedback and make adjustments to reach consensus.",
     },
     {
       src: "/assets/svg/video.svg",
-      alt: "4",
+      alt: "Content Production",
       title: "Content Production",
       content:
         "Write rough content, then edit and proofread thoroughly before sending to client for approval.",
     },
     {
       src: "/assets/svg/feedback.svg",
-      alt: "5",
+      alt: "Client Feedback",
       title: "Client Feedback",
       content: "Send drafts to client, get feedback and make final edits.",
     },
     {
       src: "/assets/svg/deliver.svg",
-      alt: "6",
+      alt: "Finish and Deliver",
       title: "Finish and Deliver",
       content:
         "Do final quality checks and deliver completed content in required format.",
     },
     {
       src: "/assets/svg/support.svg",
-      alt: "7",
+      alt: "Post-Project Support",
       title: "Post-Project Support",
       content:
         "Monitor performance and be available to support clients after content is used.",
     },
   ];
   return (
-    <div className="flex flex-col custom-shadow">
-      <div className="flex flex-col relative w-full bg-cover bg-center items-center justify-center text-white text pb-20">
-        <div className="absolute inset-0 bg-[#000080] opacity-70"></div>
+    <div className="flex flex-col ">
+      <div className="flex flex-col relative w-full bg-cover bg-center items-center justify-center text-black text pb-20">
+        <div className="absolute inset-0 bg-[#f2f2f2] opacity-70"></div>
         <div className="relative z-10 mb-4 w-10/12 pt-7">
           <motion.h1
             ref={ref}

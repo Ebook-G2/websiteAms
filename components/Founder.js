@@ -25,31 +25,31 @@ function Founder() {
   const person = [
     {
       src: "/assets/img/founder.jpg",
-      alt: "1",
+      alt: "CEO",
       name: "Nguyễn Văn A",
       position: "CEO",
     },
     {
       src: "/assets/img/person.jpg",
-      alt: "2",
+      alt: "COO",
       name: "Nguyễn Văn B",
       position: "COO",
     },
     {
       src: "/assets/img/founder.jpg",
-      alt: "3",
+      alt: "HR Manager",
       name: "Nguyễn Văn C",
       position: "HR Manager",
     },
     {
       src: "/assets/img/person.jpg",
-      alt: "4",
+      alt: "Sales Manage",
       name: "Nguyễn Văn D",
       position: "Sales Manage",
     },
     {
       src: "/assets/img/founder.jpg",
-      alt: "5",
+      alt: "Marketing Manager",
       name: "Nguyễn Văn E",
       position: "Marketing Manager",
     },

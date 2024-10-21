@@ -5,22 +5,22 @@ function SliderServices() {
   const services = [
     {
       src: "/assets/img/services11.png",
-      alt: "1",
+      alt: "Automated Content Creation",
       name: "Automated Content Creation",
     },
     {
       src: "/assets/img/services12.png",
-      alt: "2",
+      alt: "AI-generated Images and Graphics",
       name: "AI-generated Images and Graphics",
     },
     {
       src: "/assets/img/services13.png",
-      alt: "3",
+      alt: "AI-powered Social Media Management",
       name: "AI-powered Social Media Management",
     },
     {
       src: "/assets/img/services14.png",
-      alt: "4",
+      alt: "SEO Optimization and Data Analytics",
       name: "SEO Optimization and Data Analytics",
     },
   ];

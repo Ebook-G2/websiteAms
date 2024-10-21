@@ -12,9 +12,7 @@ function Header() {
 
   useEffect(() => {
     handleResize();
-
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -52,7 +50,7 @@ function Header() {
     },
   ];
   return (
-    <header className="flex max-sm:flex-col md:flex-col lg:px-2 lg:h-[70px] md:h-[70px] max-sm:h-[80px] h-fit z-50 shadow sticky top-0 bg-white font-roboto">
+    <header className="flex max-sm:flex-col md:flex-col lg:px-2 lg:h-[70px] md:h-[70px] max-sm:h-[80px] h-fit z-50 shadow sticky top-0 bg-white ">
       <div className="flex justify-between pt-[1rem] pb-5 lg:px-2 w-full ">
         <div className="w-1/6 max-sm:w-full flex items-center -my-7">
           <Link href="/" className="ml-8">
