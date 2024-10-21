@@ -7,20 +7,21 @@ import "swiper/css/pagination";
 
 function Trademark() {
   const trademark = [
-    { src: "/assets/img/facebook.png", alt: "1" },
-    { src: "/assets/img/deezer.png", alt: "2" },
-    { src: "/assets/img/itunes.png", alt: "3" },
-    { src: "/assets/img/spotify.png", alt: "4" },
-    { src: "/assets/img/shazam.png", alt: "5" },
-    { src: "/assets/img/soundclound.png", alt: "6" },
-    { src: "/assets/img/tiktok.png", alt: "8" },
-    { src: "/assets/img/youtube.png", alt: "9" },
-    { src: "/assets/img/7-digital.png", alt: "10" },
-    { src: "/assets/img/beatport.png", alt: "11" },
+    { src: "/assets/img/facebook.png", alt: "1", css: "translate-y-0" },
+    { src: "/assets/img/deezer.png", alt: "2", css: "translate-y-2" },
+    { src: "/assets/img/itunes.png", alt: "3", css: "translate-y-0" },
+    { src: "/assets/img/spotify.png", alt: "4", css: "translate-y-0" },
+    { src: "/assets/img/shazam.png", alt: "5", css: "translate-y-2" },
+    { src: "/assets/img/soundclound.png", alt: "6", css: "translate-y-0" },
+    { src: "/assets/img/tiktok.png", alt: "8", css: "translate-y-0" },
+    { src: "/assets/img/youtube.png", alt: "9", css: "translate-y-0" },
+    { src: "/assets/img/7-digital.png", alt: "10", css: "translate-y-0" },
+    { src: "/assets/img/beatport.png", alt: "11", css: "translate-y-3" },
   ];
+
   return (
     <div className="w-full flex flex-col items-center justify-between">
-      <div className="w-10/12 ">
+      <div className="w-10/12">
         <Swiper
           spaceBetween={20}
           slidesPerView={1}
@@ -40,7 +41,7 @@ function Trademark() {
           {trademark.map((trademark, index) => (
             <SwiperSlide
               key={index}
-              className="flex flex-col items-center justify-between"
+              className={`flex flex-col items-center justify-center`}
             >
               <div className="flex items-center justify-center">
                 <img
@@ -48,7 +49,7 @@ function Trademark() {
                   alt={trademark.alt}
                   width={200}
                   height={700}
-                  className="object-cover max-w-full max-h-[700px]"
+                  className={`transform object-cover max-w-full max-h-[700px] ${trademark.css}`}
                 />
               </div>
             </SwiperSlide>

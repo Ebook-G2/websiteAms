@@ -9,8 +9,8 @@ import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
 import Trademark from "../components/Trademark";
 import Achievement from "../components/Achievement";
-import Product from "../components/Product";
-// import SliderCollab from "../components/SliderCollab";
+// import Product from "../components/Product";
+import SliderCollab from "../components/SliderCollab";
 
 function Home() {
   return (
@@ -19,8 +19,8 @@ function Home() {
       <Hero />
       <Trademark />
       <AboutUs />
-      {/* <SliderCollab /> */}
-      <Product />
+      <SliderCollab />
+      {/* <Product /> */}
       <Achievement />
       <SliderServices />
       <SliderProduct />
