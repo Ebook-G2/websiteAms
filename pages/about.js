@@ -9,7 +9,7 @@ import HeroOd from "../components/HeroOd";
 import AboutUs from "../components/AboutUs";
 import Trademark from "../components/Trademark";
 import Achievement from "../components/Achievement";
-
+import SliderCollab from "../components/SliderCollab";
 function About() {
   return (
     <div>
@@ -17,6 +17,7 @@ function About() {
       <HeroOd title={"About company"} content={"About company"} />
       <Trademark />
       <AboutUs />
+      <SliderCollab />
       <Achievement />
       <SliderServices />
       <SliderProduct />
