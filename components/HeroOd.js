@@ -55,9 +55,9 @@ export default function HeroAbout({ title, content }) {
             </motion.span>
           </div>
         </div>
-        <div className="relative item  overflow-hidden">
+        <div className="relative item overflow-hidden">
           <Image
-            src="/assets/img/ai2.jpg"
+            src="/assets/img/heroOd.jpg"
             alt="ai hero image"
             className="brightness-75 w-full h-auto object-cover lg:h-[20rem] md:h-[36rem] max-2xl:h-[20rem] max-sm:h-60 "
             width={1280}

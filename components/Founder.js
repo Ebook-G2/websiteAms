@@ -55,8 +55,8 @@ function Founder() {
     },
   ];
   return (
-    <div className="w-full flex flex-col items-center justify-center">
-      <div className="w-10/12 py-20 pb-20">
+    <div className="w-full flex flex-col items-center justify-center pb-20">
+      <div className="w-10/12 ">
         <div className="flex flex-col relative items-center justify-center text-center pb-9">
           <motion.span
             ref={ref}

@@ -85,13 +85,10 @@ function Achievement() {
   };
   const totalDuration = 3500;
   return (
-    <div className="flex flex-col justify-center items-center gap-10 h-full py-14">
+    <div className="flex flex-col justify-center items-center gap-10 h-full pb-10">
       <div className="grid lg:grid-cols-4 grid-cols-3 max-sm:grid-cols-2 max-sm:gap-5 gap-6 lg:gap-10 w-10/12">
         {achievement.map((achieve, index) => (
-          <section
-            className="w-full max-sm:my-16 flex flex-col md:mt-16 max-md:mt-20"
-            key={index}
-          >
+          <section className="w-full " key={index}>
             <div className="relative h-[220px] max-sm:h-[270px] md:h-[260px]">
               <motion.div
                 ref={ref}
